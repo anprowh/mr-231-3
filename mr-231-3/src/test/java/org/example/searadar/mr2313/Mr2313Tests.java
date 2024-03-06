@@ -33,7 +33,7 @@ public class Mr2313Tests {
             Mr2313Converter converter = mr2313.createConverter();
 
             // Тестирование сообщений TTM
-            List<SearadarStationMessage> searadarMessages3 = converter.convert("$RATTM,66,28.71,341.1,T,57.6,024.5,T,0.4,4.1,N,b,L,,,А*42");
+            List<SearadarStationMessage> searadarMessages3 = converter.convert("$RATTM,66,28.71,341.1,T,57.6,024.5,T,0.4,4.1,N,b,L,,003313,А*42");
             
             // Проверка типа сообщения
             SearadarStationMessage message = searadarMessages3.get(0);

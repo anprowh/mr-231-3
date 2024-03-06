@@ -136,6 +136,11 @@ public class Mr2313Converter implements SearadarExchangeConverter {
 
         ttm.setType(type);
 
+        try {
+            ttm.setMsgTime(Long.parseLong(fields[14]));
+        } catch (NumberFormatException e) {
+        }
+
         return ttm;
     }
 
